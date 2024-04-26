@@ -43,7 +43,7 @@ a:focus {
 }
 
 ul {
-    padding-left: 1.2em;
+    margin-top: 0.2em;
 }
 
 .flex {
@@ -150,4 +150,8 @@ section > h2 {
 
 .proficiencies h3 {
     color: var(--proficiencies-header-color);
+}
+
+.proficiencies ul {
+    padding-left: 1.5em;
 }
