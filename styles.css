@@ -22,6 +22,17 @@ body {
     color: var(--body-color);
 }
 
+@media print {
+    @page {
+        size: Letter;
+        margin: 0.5in;
+    }
+
+    body {
+        padding: 0;
+    }
+}
+
 h1,
 h2,
 h3,
