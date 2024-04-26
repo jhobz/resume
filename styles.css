@@ -1,0 +1,153 @@
+:root {
+    --font-header: 'Kanit', sans-serif;
+    --font-body: 'Merriweather', serif;
+    --section-header-color: rgba(125, 165, 204, 0.635);
+    --proficiencies-header-color: rgba(8, 41, 75, 0.793);
+    --body-color: #232323;
+    --accent-color: #1967d2;
+}
+
+html {
+    background-color: antiquewhite;
+    /* height: 22in;
+    overflow: hidden; */
+}
+
+body {
+    margin: auto;
+    max-width: 8.5in;
+    padding: 0.5in;
+    background-color: white;
+    font-family: var(--font-body);
+    color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-header);
+}
+
+a {
+    font-weight: 700;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1.2em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.col {
+    flex-direction: column;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+header > h1 {
+    font-size: 4rem;
+}
+
+header > .contact-details {
+    text-align: right;
+    font-weight: 600;
+}
+
+header > .object-statement {
+    grid-column: span 2;
+    font-size: 0.9rem;
+}
+
+.first-name {
+    /* color: var(--section-header-color); */
+    font-weight: 200;
+}
+
+main {
+    margin-top: 1em;
+}
+
+section {
+    border-top: 2px solid var(--section-header-color);
+    font-size: 0.9rem;
+}
+
+section:not(:first-of-type) {
+    margin-top: 1em;
+}
+
+section > h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--section-header-color);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.item:not(:first-of-type) {
+    margin-top: 0.5em;
+}
+
+.item-header {
+    font-family: var(--font-header);
+}
+
+.item-header h3 {
+    display: inline;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.item-header h3::after {
+    content: '|';
+    margin: 0 0.2em 0 0.4em;
+    font-weight: 200;
+    color: var(--section-header-color);
+}
+
+.item-company {
+    font-size: 1.3rem;
+}
+
+.item-details {
+    font-weight: 600;
+    text-transform: uppercase;
+    /* color: var(--section-header-color); */
+}
+
+.item-location {
+    font-weight: 400;
+    margin-left: 0.5em;
+}
+
+.role {
+    font-weight: 900;
+}
+
+.proficiencies {
+    font-size: 0.9rem;
+}
+
+.proficiencies > .flex > div {
+    flex: 1 0 fit-content;
+}
+
+.proficiencies h3 {
+    color: var(--proficiencies-header-color);
+}
