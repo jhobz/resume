@@ -155,3 +155,10 @@ section > h2 {
 .proficiencies ul {
     padding-left: 1.5em;
 }
+
+footer {
+    margin-top: 1em;
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: var(--section-header-color);
+}
