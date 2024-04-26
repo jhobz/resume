@@ -145,7 +145,18 @@ section > h2 {
 }
 
 .proficiencies > .flex > div {
+    position: relative;
     flex: 1 0 fit-content;
+}
+
+.proficiencies > .flex > div:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    border-right: 1px solid var(--section-header-color);
+    height: 60%;
+    top: 50%;
+    right: 1.5em;
+    transform: translate(0, -50%);
 }
 
 .proficiencies h3 {
@@ -154,6 +165,19 @@ section > h2 {
 
 .proficiencies ul {
     padding-left: 1.5em;
+}
+
+.passions > ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* column-gap: 0.8in; */
+    justify-content: space-between;
+    padding-left: 1.2em;
+}
+
+.passions > ul > li {
+    padding-left: 0;
+    text-indent: -0.4em;
 }
 
 footer {
