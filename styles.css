@@ -11,6 +11,7 @@ html {
     background-color: antiquewhite;
     /* height: 22in;
     overflow: hidden; */
+    font-size: 0.91em;
 }
 
 body {
@@ -72,12 +73,14 @@ header {
 }
 
 header > h1 {
-    font-size: 4rem;
+    font-size: 4.3rem;
+    line-height: 1;
 }
 
 header > .contact-details {
     text-align: right;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 header > .object-statement {
@@ -109,10 +112,15 @@ section > h2 {
     color: var(--section-header-color);
     font-size: 1.1rem;
     font-weight: 300;
+    text-align: right;
 }
 
-.item:not(:first-of-type) {
+.item {
     margin-top: 0.5em;
+}
+
+.item:first-of-type {
+    margin-top: -1em;
 }
 
 .item-header {
