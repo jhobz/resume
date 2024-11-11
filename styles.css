@@ -162,10 +162,6 @@ section > h2 {
     font-size: 0.9rem;
 }
 
-.proficiencies > .item {
-    margin-top: 0;
-}
-
 .proficiencies > .item > div {
     position: relative;
     flex: 1 0 fit-content;
