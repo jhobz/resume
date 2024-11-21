@@ -29,6 +29,10 @@ body {
 
     body {
         padding: 0;
+
+        /* We're using Print to PDF, not actual printing, so we should use exact colors */
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
     }
 }
 
