@@ -21,21 +21,6 @@ body {
     color: var(--body-color);
 }
 
-@media print {
-    @page {
-        size: Letter;
-        margin: 0.48in 0.5in;
-    }
-
-    body {
-        padding: 0;
-
-        /* We're using Print to PDF, not actual printing, so we should use exact colors */
-        print-color-adjust: exact !important;
-        -webkit-print-color-adjust: exact !important;
-    }
-}
-
 h1,
 h2,
 h3,
@@ -209,4 +194,72 @@ footer {
     font-size: 0.77rem;
     color: var(--section-header-color);
     text-align: center;
+}
+
+/* Mobile styles */
+@media only screen and (width < 8.5in) {
+    :root {
+        font-size: 12px;
+    }
+
+    body {
+        padding: 2em;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        & > .contact-details {
+            text-align: center;
+        }
+    }
+
+    section > h2 {
+        justify-self: flex-start;
+    }
+
+    .item:first-of-type {
+        margin-top: 0;
+    }
+
+    .proficiencies {
+        & > .item > div::after {
+            display: none;
+        }
+
+        & > .flex {
+            flex-wrap: wrap;
+        }
+    }
+
+    .item-header {
+        & > h3::after {
+            display: none;
+        }
+
+        & > .item-company {
+            display: block;
+        }
+
+        & > .item-details {
+            margin-top: 0;
+        }
+    }
+}
+
+/* Print styles (to fit 2 pages) */
+@media print {
+    @page {
+        size: Letter;
+        margin: 0.48in 0.5in;
+    }
+
+    body {
+        padding: 0;
+
+        /* We're using Print to PDF, not actual printing, so we should use exact colors */
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
 }
