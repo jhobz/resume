@@ -108,7 +108,7 @@ section > h2 {
 }
 
 .item:first-of-type {
-    margin-top: -1.5em;
+    margin-top: -0.5em;
 }
 
 .item-header {
